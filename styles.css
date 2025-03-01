@@ -2,8 +2,20 @@ body {
   margin: 0;
   height: 100vh;
   overflow: hidden;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+
+p {
+  height: 30px;
+  margin: 6px 0px;
+  font-size: 30px;
+  color: rgba(4, 4, 4, 0.285);
+  text-transform: capitalize;
+}
+
 .node {
   position: absolute;
   width: 10px;
@@ -12,6 +24,22 @@ body {
   border-radius: 50%;
   transform: translate(-50%, -50%);
 }
+
+.guide-point {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(78, 185, 78);
+}
+
+.guide-point:hover {
+  background-color: rgb(135, 216, 135);
+}
+
+.line {
+  stroke-width: 2;
+  stroke: black;
+}
+
 .visible {
   width: 20px;
   height: 20px;
